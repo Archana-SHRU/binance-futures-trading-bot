@@ -68,7 +68,7 @@ This system can benefit:
 
 ---
 
-## 5. Project Architecture
+ Project Architecture
 
 trading_bot/
 │
@@ -160,3 +160,4 @@ and can be activated by adding valid API credentials in client.py.
 ## Author
 
 Developed as part of Python Developer Internship Assignment.
+
