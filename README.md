@@ -70,23 +70,23 @@ This system can benefit:
 
 # Project Architecture
 
-The `trading_bot` project is organized as follows:
+The `trading_bot` project is structured to separate core functionality, logging, and CLI interaction for clarity and maintainability. The folder hierarchy is as follows:
 
-
+```text
 trading_bot/
 │
-├── bot/ [Core bot functionality]
-│ ├── client.py [Handles API/client connections]
-│ ├── logging_config.py [Configures logging for the bot]
-│ ├── mock_responses.py [Mock data for testing]
-│ ├── orders.py [Order placement and management]
-│ ├── validators.py [Input validation functions]
+├── bot/                     [Core bot functionality]
+│   ├── client.py             [Handles API/client connections]
+│   ├── logging_config.py     [Configures logging for the bot]
+│   ├── mock_responses.py     [Mock data for testing]
+│   ├── orders.py             [Order placement and management]
+│   ├── validators.py         [Input validation functions]
 │
-├── logs/ [Directory to store log files]
+├── logs/                     [Directory to store log files]
 │
-├── cli.py [Command-line interface to interact with the bot]
-├── README.md [Project documentation]
-├── requirements.txt [Project dependencies]
+├── cli.py                    [Command-line interface to interact with the bot]
+├── README.md                 [Project documentation]
+├── requirements.txt          [Project dependencies]
 
 ## 6. Setup Instructions
 
@@ -161,5 +161,6 @@ and can be activated by adding valid API credentials in client.py.
 ## Author
 
 Developed as part of Python Developer Internship Assignment.
+
 
 
