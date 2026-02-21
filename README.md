@@ -68,24 +68,25 @@ This system can benefit:
 
 ---
 
- Project Architecture
+# Project Architecture
+
+The `trading_bot` project is organized as follows:
+
 
 trading_bot/
 │
-├── bot/
-│   ├── client.py
-│   ├── logging_config.py
-│   ├── mock_responses.py
-│   ├── orders.py
-│   ├── validators.py
+├── bot/ [Core bot functionality]
+│ ├── client.py [Handles API/client connections]
+│ ├── logging_config.py [Configures logging for the bot]
+│ ├── mock_responses.py [Mock data for testing]
+│ ├── orders.py [Order placement and management]
+│ ├── validators.py [Input validation functions]
 │
-├── logs/
+├── logs/ [Directory to store log files]
 │
-├── cli.py
-├── README.md
-├── requirements.txt
-
----
+├── cli.py [Command-line interface to interact with the bot]
+├── README.md [Project documentation]
+├── requirements.txt [Project dependencies]
 
 ## 6. Setup Instructions
 
@@ -160,4 +161,5 @@ and can be activated by adding valid API credentials in client.py.
 ## Author
 
 Developed as part of Python Developer Internship Assignment.
+
 
